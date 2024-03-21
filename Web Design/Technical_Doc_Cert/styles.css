@@ -1,0 +1,121 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .nav-link {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+
+/* Applying modern font style */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+#navbar {
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 100;
+}
+
+#title {
+  text-indent: 15px;
+  margin-bottom: 12px;
+}
+
+#navbar header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+}
+
+/* Style the main content */
+#main-doc {
+  margin-top: auto; /* Adjust for the fixed navbar */
+}
+
+.main-section {
+  padding: 25px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  line-height: 1.5;
+}
+
+.main-section header {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.subHeader {
+  text-size-adjust: 100px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+/* Style code blocks */
+code {
+  background-color: #f8f8f8;
+  padding: 2px;
+  border: 1px solid #ccc;
+  font-family: 'Courier New', monospace;
+}
+#example {
+  background-color: #f8f8f8;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Courier New', monospace;
+}
+
+/* Style Images */
+img {
+  max-width: 99%;
+  max-height: 99%;
+}
+
+/* Marker */
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+
+/*sources */
+
+.sources {
+  padding: 25px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  line-height: 1.5;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Tea or Coffee Survay</h1>
+  <p id="description">For T&C co. Please fill out the survey below:</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </label>
+
+    <label for="email" id="email-label">Email:
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </label>
+
+    <label for="number" id="number-label">Number:
+      <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+    </label>
+
+    <label for="dropdown">Select an option:
+      <select id="dropdown">
+        <option value="option1">Please select an option</option>
+        <option value="option2">Tea</option>
+        <option value="option3">Coffee</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>What time do you drink your coffee or tea?</legend>
+      <label>
+        <input type="radio" name="radio-group" value="optionA"> Morning
+      </label>
+      <label>
+        <input type="radio" name="radio-group" value="optionB"> Afternoon
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you put anything in your coffee?</legend>
+      <label>
+        <input type="checkbox" value="checkboxA"> Milk
+      </label>
+      <label>
+        <input type="checkbox" value="checkboxB"> Cream
+      </label>
+      <label>
+        <input type="checkbox" value="checkboxC"> Surgar
+      </label>
+      <label>
+        <input type="checkbox" value="checkboxD"> Black
+      </label>
+    </fieldset>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
